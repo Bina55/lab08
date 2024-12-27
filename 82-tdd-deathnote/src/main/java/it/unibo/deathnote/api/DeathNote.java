@@ -97,7 +97,7 @@ public interface DeathNote {
      * @throws IllegalStateException if there is no name written in this DeathNote,
      * or the cause is null
      */
-    boolean writeDeathCause(String cause);
+    boolean writeDeathCause(String name, String cause);
 
     /**
      * After writing the cause of death, details of the death should be written in the next
@@ -108,7 +108,7 @@ public interface DeathNote {
      * @throws IllegalStateException if there is no name written in this DeathNote,
      * or the details are null
      */
-    boolean writeDetails(String details);
+    boolean writeDetails(String name, String details);
 
     /**
      * Provides the cause of death of the person with the given name.
